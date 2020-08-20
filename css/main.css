@@ -130,9 +130,6 @@ header nav ul li a{
 	width: 100%;
 	margin: 0 auto;
 	border-top: 1px solid #eee;
-	display: flex;
-	justify-content: center;
-	flex-flow: column;
 }
 
 .section-one h4,
@@ -167,6 +164,7 @@ header nav ul li a{
 /*The widths are in a percentage!*/
 footer {
 	border-top: 3px solid #eee;
+	width: 100%;
 	margin: 0 auto;
 	text-align: center;
 	display: flex;
@@ -184,18 +182,25 @@ footer span {
 
 @media all and (min-width:768px) {
 	.bottom-section {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-flow: row;
 	}
 
 	.section-one,
 	.section-two,
 	.section-three {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-flow: row wrap;
+	width: 30%;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0 auto;
+	}
+
+	.section-two {
+	border-right: 1px solid #eee;
+	border-left: 1px solid #eee;
 	}
 }
 
@@ -205,9 +210,8 @@ footer span {
 	header nav ul {
     display: flex;
     justify-content: space-between;
-  }
+	}
 }
-
 
 
 
